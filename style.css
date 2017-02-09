@@ -1,56 +1,120 @@
-/* CSS Document */
-body {
-    font:12px arial;
-    color: #222;
-    text-align:center;
-    padding:35px; }
-  
-form, p, span {
-    margin:0;
-    padding:0; }
-  
-input { font:12px arial; }
-  
-a {
-    color:#0000FF;
-    text-decoration:none; }
-  
-    a:hover { text-decoration:underline; }
-  
-#wrapper, #loginform {
-    margin:0 auto;
-    padding-bottom:25px;
-    background:#EBF4FB;
-    width:504px;
-    border:1px solid #ACD8F0; }
-  
-#loginform { padding-top:18px; }
-  
-    #loginform p { margin: 5px; }
-  
-#chatbox {
-    text-align:left;
-    margin:0 auto;
-    margin-bottom:25px;
-    padding:10px;
-    background:#fff;
-    height:270px;
-    width:430px;
-    border:1px solid #ACD8F0;
-    overflow:auto; }
-  
-#usermsg {
-    width:395px;
-    border:1px solid #ACD8F0; }
-  
-#submit { width: 60px; }
-  
-.error { color: #ff0000; }
-  
-#menu { padding:12.5px 25px 12.5px 25px; }
-  
-.welcome { float:left; }
-  
-.logout { float:right; }
-  
-.msgln { margin:0 0 2px 0; 
+/* karla-regular - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'), url('fonts/karla-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('fonts/karla-v5-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* karla-700 - latin */
+@font-face {
+  font-family: 'Karla-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Karla Bold'), local('Karla-Bold'), url('fonts/karla-v5-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('fonts/karla-v5-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html,
+body,
+header {
+  width: 100%;
+  font-family: 'Karla-bold';
+  margin: 0;
+  background-color: black;
+}
+header {
+  padding: 10vh 0;
+  text-align: center;
+  background-color: #7eefcc;
+}
+.login,
+.enter {
+  width: 15vw;
+  margin: auto;
+}
+.login {
+  margin: 10vh auto;
+}
+.login p {
+  color: #b8a6e4;
+}
+.login img,
+.login div {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.login div {
+  margin-left: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #333;
+}
+.login div input {
+  color: white;
+  border: none;
+  background: black;
+}
+.enter {
+  text-align: center;
+  height: 10vh;
+  background: #b8a6e4;
+  cursor: pointer;
+}
+.enter p {
+  font-size: 1.5em;
+  line-height: 10vh;
+}
+/*chat*/
+.chat {
+  display: none;
+}
+.chat_header {
+  height: 50px;
+  width: 100%;
+  margin-top: 3vh;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  color: white;
+  display: inline-block;
+  clear: both;
+}
+.chat_header_point {
+  float: right;
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+.chat_message {
+  width: 50vw;
+  margin: auto;
+}
+.nick {
+  color: white;
+}
+.messages {
+  background-color: #7eefcc;
+  margin-top: 10px;
+  font-family: 'Karla';
+}
+.panel {
+  width: 50vw;
+  position: fixed;
+  bottom: 10vh;
+}
+#message_text {
+  width: 100%;
+  height: 50px;
+}
+#message_btn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url('img/send.png');
+  background-size: contain;
+}
+
+/*# sourceMappingURL=style.css.map */

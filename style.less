@@ -1,0 +1,132 @@
+@base-color: #7eefcc;
+@font-color: #b8a6e4;
+@border-color: #333;
+
+/* karla-regular - latin */
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Karla'), local('Karla-Regular'),
+       url('./fonts/karla-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/karla-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* karla-700 - latin */
+@font-face {
+  font-family: 'Karla-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Karla Bold'), local('Karla-Bold'),
+       url('./fonts/karla-v5-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/karla-v5-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html, body, header{
+	width: 100%;
+	font-family: 'Karla-bold';
+	margin: 0;
+	background-color: black;
+}
+header{
+	padding: 10vh 0;
+	text-align: center;
+	background-color: @base-color;
+}
+.first_page{
+
+}
+.login, .enter{
+	width: 15vw;
+	margin: auto;
+}
+.login{
+	margin:  10vh auto;
+	p{
+		color: @font-color;
+	}
+	img, div{
+		width: auto;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	div{
+		margin-left: 30px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid @border-color;
+		input {
+
+			color: white;
+			border: none;
+			background: black;
+		}
+	}
+}
+.enter{
+	text-align: center;
+	height: 10vh;
+	background: @font-color;
+	cursor: pointer;
+	p{
+		font-size: 1.5em;
+		line-height: 10vh;
+	}
+}
+
+/*chat*/
+.chat{
+	display: none;
+
+}
+.chat_header{
+	height: 50px;
+	width: 100%;
+	margin-top: 3vh;
+	text-align: center;
+	border-bottom: 2px solid @border-color;
+	color: white;
+	display: inline-block;
+	clear: both;
+}
+.chat_header_point{
+	float: right;
+	position: absolute;
+	right: 50px;
+	top:20px;
+}
+.chat_message{
+	width: 50vw;
+
+	margin: auto;
+}
+.nick{
+	color: white;
+}
+.messages{
+	background-color: @base-color;
+	margin-top: 10px;
+	font-family: 'Karla';
+}
+.panel{
+	width: 50vw;
+	position: fixed;
+	bottom: 10vh;
+}
+#message_text{
+	width: 100%;
+	height: 50px;
+
+}
+#message_btn{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 35px;
+	right: 0;
+	border: none;
+	background-color: transparent;
+	background-image: url('img/send.png');
+	background-size: contain;
+
+}
